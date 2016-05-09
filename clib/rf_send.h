@@ -14,6 +14,6 @@ void addParityAndSendData(uint8_t *hb, uint8_t hblen,
 
 
 extern uint16_t credit_10ms;
-#define MAX_CREDIT 900       // max 9 seconds burst / 25% of the hourly budget
+#define MAX_CREDIT 3600       // 100% of the hourly budget
 
 #endif
