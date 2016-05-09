@@ -879,8 +879,8 @@ ISR(CC1100_INTVECT)
 	      b->one.lowtime = hightime;
       } else {
         b->sync=1;
-        if (hightime*2>lowtime) {
-          // No IT, because times to near
+        if (hightime/2>lowtime*2) {
+          // No IT
           b->state = STATE_RESET;
           return;
         }
